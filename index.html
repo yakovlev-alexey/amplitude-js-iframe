@@ -1,1 +1,68 @@
-<!DOCTYPE html><html lang="en"><head><title></title></head><style>body{display:flex;flex-flow:column nowrap}iframe{left:-100000px;position:absolute;top:-100000px;visibility:hidden}</style><body> <button id="user">Click me to set user id</button> <button id="properties">Click me to set user properties</button> <button id="event">Click me to initiate an event</button> <iframe id="iframe" src="/iframe.html"></iframe> <p>Check network in your devtools to see outgoing requests</p> <code style="white-space:pre"> import { AmplitudeIframeClient, getIframeMessagePort, } from "amplitude-js-iframe"; (async () => { try { const iframeMp = await getIframeMessagePort("#iframe"); AmplitudeIframeClient.getInstance().init( iframeMp, "5a5c2a0b4dac9ad7ab4461e20d3aa728" ); } catch (e) { console.error(e); } })(); const evtBtn = document.getElementById("event"); evtBtn.addEventListener("click", () => { AmplitudeIframeClient.getInstance().logEvent("test", { hello: "world", quick: ["brown", "fox"], }); }); const userBtn = document.getElementById("user"); userBtn.addEventListener("click", () => { AmplitudeIframeClient.getInstance().setUserId("123"); }); const propertiesBtn = document.getElementById("properties"); propertiesBtn.addEventListener("click", () => { AmplitudeIframeClient.getInstance().setUserProperties({ role: "anon" }); }); </code> <script type="module" src="/index.be45355a.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    iframe {
+      position: absolute;
+      visibility: hidden;
+      top: -100000px;
+      left: -100000px;
+    }
+  
+</style>
+  <body>
+    <button id="user">Click me to set user id</button>
+    <button id="properties">Click me to set user properties</button>
+    <button id="event">Click me to initiate an event</button>
+
+    <iframe id="iframe" src="/iframe.html"></iframe>
+
+    <p>Check network in your devtools to see outgoing requests</p>
+
+    <code style="white-space: pre">
+      import {
+        AmplitudeIframeClient,
+        getIframeMessagePort,
+      } from "amplitude-js-iframe";
+      
+      (async () => {
+        try {
+          const iframeMp = await getIframeMessagePort("#iframe");
+          AmplitudeIframeClient.getInstance().init(
+            iframeMp,
+            "5a5c2a0b4dac9ad7ab4461e20d3aa728"
+          );
+        } catch (e) {
+          console.error(e);
+        }
+      })();
+      
+      const evtBtn = document.getElementById("event");
+      evtBtn.addEventListener("click", () => {
+        AmplitudeIframeClient.getInstance().logEvent("test", {
+          hello: "world",
+          quick: ["brown", "fox"],
+        });
+      });
+      
+      const userBtn = document.getElementById("user");
+      userBtn.addEventListener("click", () => {
+        AmplitudeIframeClient.getInstance().setUserId("123");
+      });
+      
+      const propertiesBtn = document.getElementById("properties");
+      propertiesBtn.addEventListener("click", () => {
+        AmplitudeIframeClient.getInstance().setUserProperties({ role: "anon" });
+      });      
+    </code>
+
+    <script type="module" src="/index.7b737051.js"></script>
+  </body>
+</html>

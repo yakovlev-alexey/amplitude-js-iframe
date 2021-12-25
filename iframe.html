@@ -1,1 +1,115 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"></head><body> <script type="text/javascript">!function(e,t){var n=e.amplitude||{_q:[],_iq:{}},r=t.createElement("script");r.type="text/javascript",r.integrity="sha384-4rr7CTymHc64YjTTL6O3ktfsHYI1yJnQdmKv4zFoe+frjXb05MfzzuLLIAgJ/XHs",r.crossOrigin="anonymous",r.async=!0,r.src="https://cdn.amplitude.com/libs/amplitude-8.11.0-min.gz.js",r.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var s=t.getElementsByTagName("script")[0];function o(e,t){e.prototype[t]=function(){return this._q.push([t].concat(Array.prototype.slice.call(arguments,0))),this}}s.parentNode.insertBefore(r,s);for(var i=function(){return this._q=[],this},a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove"],c=0;c<a.length;c++)o(i,a[c]);n.Identify=i;for(var u=function(){return this._q=[],this},p=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"],l=0;l<p.length;l++)o(u,p[l]);n.Revenue=u;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","enableTracking","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId","setLibrary","setTransport"];function f(e){function t(t){e[t]=function(){e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}for(var n=0;n<d.length;n++)t(d[n])}f(n),n.getInstance=function(e){return e=(e&&0!==e.length?e:"$default_instance").toLowerCase(),Object.prototype.hasOwnProperty.call(n._iq,e)||(n._iq[e]={_q:[]},f(n._iq[e])),n._iq[e]},e.amplitude=n}(window,document);</script> <script src="/iframe.0c58068e.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8"></head>
+    <body>
+        <script type="text/javascript">(function(e1, t1) {
+    var r1 = e1.amplitude || {
+        _q: [],
+        _iq: {
+        }
+    };
+    var n = t1.createElement("script");
+    n.type = "text/javascript";
+    n.integrity = "sha384-4rr7CTymHc64YjTTL6O3ktfsHYI1yJnQdmKv4zFoe+frjXb05MfzzuLLIAgJ/XHs";
+    n.crossOrigin = "anonymous";
+    n.async = true;
+    n.src = "https://cdn.amplitude.com/libs/amplitude-8.11.0-min.gz.js";
+    n.onload = function() {
+        if (!e1.amplitude.runQueuedFunctions) console.log("[Amplitude] Error: could not load SDK");
+    };
+    var s = t1.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(n, s);
+    function i(e, t) {
+        e.prototype[t] = function() {
+            this._q.push([
+                t
+            ].concat(Array.prototype.slice.call(arguments, 0)));
+            return this;
+        };
+    }
+    var o = function() {
+        this._q = [];
+        return this;
+    };
+    var a = [
+        "add",
+        "append",
+        "clearAll",
+        "prepend",
+        "set",
+        "setOnce",
+        "unset",
+        "preInsert",
+        "postInsert",
+        "remove"
+    ];
+    for(var c = 0; c < a.length; c++)i(o, a[c]);
+    r1.Identify = o;
+    var u = function() {
+        this._q = [];
+        return this;
+    };
+    var p = [
+        "setProductId",
+        "setQuantity",
+        "setPrice",
+        "setRevenueType",
+        "setEventProperties"
+    ];
+    for(var l = 0; l < p.length; l++)i(u, p[l]);
+    r1.Revenue = u;
+    var d = [
+        "init",
+        "logEvent",
+        "logRevenue",
+        "setUserId",
+        "setUserProperties",
+        "setOptOut",
+        "setVersionName",
+        "setDomain",
+        "setDeviceId",
+        "enableTracking",
+        "setGlobalUserProperties",
+        "identify",
+        "clearUserProperties",
+        "setGroup",
+        "logRevenueV2",
+        "regenerateDeviceId",
+        "groupIdentify",
+        "onInit",
+        "logEventWithTimestamp",
+        "logEventWithGroups",
+        "setSessionId",
+        "resetSessionId",
+        "setLibrary",
+        "setTransport"
+    ];
+    function v(e) {
+        function t2(t) {
+            e[t] = function() {
+                e._q.push([
+                    t
+                ].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+        }
+        for(var r = 0; r < d.length; r++)t2(d[r]);
+    }
+    v(r1);
+    r1.getInstance = function(e) {
+        e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+        if (!Object.prototype.hasOwnProperty.call(r1._iq, e)) {
+            r1._iq[e] = {
+                _q: []
+            };
+            v(r1._iq[e]);
+        }
+        return r1._iq[e];
+    };
+    e1.amplitude = r1;
+})(window, document);
+
+</script>
+
+        <script src="/iframe.ca39d0a3.js"></script>
+    </body>
+</html>
