@@ -7,7 +7,7 @@ const isDomContentLoaded = (document = window.document) => {
 const isIframe = (element: Element | null): element is HTMLIFrameElement =>
     element instanceof HTMLIFrameElement;
 
-export const getIframeMessagePort = async (iframeSelector: string): Promise<WindowProxy> => {
+export const getIframeMessagePort = (iframeSelector: string): Promise<WindowProxy> => {
     return new Promise((ok, no) => {
         if (isDomContentLoaded()) {
             const iframe = document.querySelector(iframeSelector);
