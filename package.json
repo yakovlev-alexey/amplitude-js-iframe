@@ -1,0 +1,11 @@
+{
+  "name": "amplitudejs-iframe",
+  "version": "1.0.0",
+  "description": "AmplitudeJS cross-domain iframe communication client",
+  "main": "index.js",
+  "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}
