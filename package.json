@@ -5,7 +5,8 @@
   "main": "index.js",
   "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "@types/amplitude-js": "^8.0.2",
     "typescript": "^4.5.4"
   }
 }
