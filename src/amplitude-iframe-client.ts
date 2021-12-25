@@ -67,8 +67,6 @@ export class AmplitudeIframeClient {
     }
 
     this._postMessage("id", { userId });
-
-    this._clearQueue();
   }
 
   public setUserProperties(properties: Record<string, unknown>) {
@@ -78,8 +76,6 @@ export class AmplitudeIframeClient {
     }
 
     this._postMessage("properties", { properties });
-
-    this._clearQueue();
   }
 
   public logEvent(event: string, additional: Record<string, unknown>) {
@@ -89,8 +85,6 @@ export class AmplitudeIframeClient {
     }
 
     this._postMessage("event", { event, additional });
-
-    this._clearQueue();
   }
 
   private _waitForInitialization(
@@ -114,6 +108,7 @@ export class AmplitudeIframeClient {
         return;
       }
 
+      this._clearQueue();
       this._isInitialized = true;
       clearInterval(initializedInterval);
       window.removeEventListener("message", handleInitialized);
