@@ -1,0 +1,10 @@
+{
+  "name": "amplitude-js-iframe-gh-pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
