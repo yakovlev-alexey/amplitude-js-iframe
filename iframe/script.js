@@ -8,7 +8,7 @@ window.addEventListener("message", function (e) {
             window.top.postMessage({ type: "initialized" }, "*");
             break;
 
-        case "properties":
+        case "id":
             a(p.instance).setUserId(p.userId);
             break;
 
