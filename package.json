@@ -4,7 +4,9 @@
     "description": "AmplitudeJS cross-domain iframe communication client",
     "main": "dist/index.js",
     "files": [
-        "dist/**"
+        "dist/**",
+        "README.md",
+        "LICENSE"
     ],
     "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
     "license": "MIT",
