@@ -958,6 +958,11 @@ alphanum-sort@^1.0.2:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+amplitude-js-iframe@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/amplitude-js-iframe/-/amplitude-js-iframe-1.0.0.tgz#c37f764ab872d7b5fe74c35fcf27e079199db1d1"
+  integrity sha512-Rx6PzOREoy1fgdR/IOtBKneJXa/TRRtb0W2VwNlm2vhZI4eq+OG9DrrOp1+Ia5EnpI9KUnhaXobT8Z60c5Udrg==
+
 ansi-escapes@^4.2.1:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-4.3.2.tgz#6b2291d1db7d98b6521d5f1efa42d0f3a9feb65e"
