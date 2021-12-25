@@ -95,7 +95,9 @@ export class AmplitudeIframeClient {
     }
 
     private _postMessage(type: MessageType, payload: MessagePayload) {
-        this._port?.postMessage({ type, payload });
+        const instance = this._instanceId === DEFAULT_INSTANCE_ID ? null : this._instanceId;
+
+        this._port?.postMessage({ type, payload: { instance, ...payload } });
     }
 
     private _clearQueue() {
