@@ -1,6 +1,6 @@
 {
     "name": "amplitude-js-iframe",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "AmplitudeJS cross-domain iframe communication client",
     "main": "dist/index.js",
     "files": [
@@ -12,12 +12,12 @@
     "license": "MIT",
     "scripts": {
         "build": "tsc",
-        "clean": "rm -rf build",
+        "clean": "rm -rf dist",
         "lint": "npm-run-all lint:*",
         "lint:scripts": "eslint './**/*.{js,ts}'",
         "format": "prettier --write './**/*.{js,ts}'",
         "lint:types": "tsc --noEmit",
-        "prepublish": "yarn build",
+        "prepublish": "yarn clean && yarn build",
         "prepare": "husky install"
     },
     "keywords": [
