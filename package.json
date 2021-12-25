@@ -1,5 +1,5 @@
 {
-    "name": "amplitudejs-iframe",
+    "name": "amplitude-js-iframe",
     "version": "1.0.0",
     "description": "AmplitudeJS cross-domain iframe communication client",
     "main": "dist/index.js",
@@ -18,6 +18,12 @@
         "prepublish": "yarn build",
         "prepare": "husky install"
     },
+    "keywords": [
+        "amplitude",
+        "iframe",
+        "cross-domain",
+        "analytics"
+    ],
     "devDependencies": {
         "@commitlint/cli": "^15.0.0",
         "@commitlint/config-conventional": "^15.0.0",
